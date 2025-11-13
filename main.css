@@ -42,7 +42,7 @@ header {
 }
 
 main {
-
+	display:grid;
 }
 
 p {
@@ -53,19 +53,25 @@ p {
 #intro {
 	font-size: 22px;
 }
-
+/* not sure if this is what you're looking for here */
 #automotive, #maritime, #medical, #physics, #myths {
-
+	border-top:1px solid black;
 }
 
 #footer-container {
-	
+	display:grid;
+	grid-template-rows:100px;
+	align-items: end;
 }
 
 #header-container {
-
+	display:grid;
+	grid-template-rows: 200px;
+	align-items:center;
 }
 
 #main-container {
-
+	display:grid;
+	grid-template-columns: 1fr 3fr 1fr;
+	gap:10px;
 }
